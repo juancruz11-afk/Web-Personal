@@ -8,21 +8,25 @@ const projects = [
     description: 'Sistema web para gestión de eventos, inscripciones y reportes, para el Centro Deportivo De Tijuana.',
     tech: ['PHP', 'JavaScript', 'HTML', 'mysql'],
     github: 'https://github.com/RodolfoHubster/Centro-Deportivo',
-    demo: '',
+    demo: 'https://cimahub-fcitec.tij.uabc.mx/Centro-Deportivo/public/',
+    image: '/projects/Centro-deportivo.png',
   },
   {
     title: 'Portafolio Personal',
     description: 'Cv web moderno con animaciones y diseño profesional.',
-    tech: ['next.js', 'tailwind', 'framer motion'],
+    tech: ['Next.js', 'Tailwind', 'Framer motion'],
     github: 'https://github.com/juancruz11-afk/Web-Personal.git',
-    demo: '',
+    demo: 'http://localhost:3000/#',
+    image: '/projects/Cv.png',
   },
   {
-  title: '',
-  description: '',
-  tech: ['', '', ''],
-  github: '',
-  demo: '',
+  title: 'AI Semantic Movie Recommender',
+  description: 'Motor de búsqueda semántica que recomienda películas interpretando el lenguaje natural del usuario (NLP). Utiliza embeddings vectoriales para entender el contexto (ej: "tristeza en el espacio") en lugar de simples palabras clave. El sistema conecta con la API de TMDB para obtener proveedores de streaming en tiempo real.',
+  tech: ['Python (FastAPI & Pandas)', 'Machine Learning (Scikit-learn & Sentence-Transformers)', 'Next.js 14 & Tailwind CSS'
+  ],
+  github: 'https://github.com/juancruz11-afk/Recomendacion-Pelicula.git',
+  demo: 'https://recomendacion-pelicula.vercel.app',
+  image: '/images/movie-project.png',
 }
 
 ]
@@ -88,6 +92,16 @@ export default function Projects() {
                     className="text-sm text-gray-300 hover:text-white transition"
                   >
                     demo →
+                  </a>
+                )}
+
+                {project.image && (
+                  <a
+                    href={project.image}
+                    target="_blank"
+                    className="text-sm text-gray-300 hover:text-white transition"
+                  >
+                    image →
                   </a>
                 )}
               </div>
