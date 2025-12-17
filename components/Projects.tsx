@@ -16,7 +16,7 @@ const projects = [
     description: 'Cv web moderno con animaciones y diseño profesional.',
     tech: ['Next.js', 'Tailwind', 'Framer motion'],
     github: 'https://github.com/juancruz11-afk/Web-Personal.git',
-    demo: 'http://localhost:3000/#',
+    demo: 'https://juancruz11-afk.github.io/Web-Personal/#',
     image: '/projects/Cv.png',
   },
   {
